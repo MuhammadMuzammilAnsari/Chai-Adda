@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chai Adda – Karachi ki kadak chai</title>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="strip"></div>
+<div class="wrap">
+  <header>
+    <a class="logo" href="#top">Chai Adda</a>
+    <nav>
+      <a class="hide" href="#menu">Menu</a>
+      <a class="hide" href="#order">Order</a>
+      <a class="hide" href="#visit">Visit</a>
+      <button class="theme" id="theme" aria-label="Switch light or dark theme">Theme</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div>
+        <h1>Kadak chai, garam paratha, lambi baatein.</h1>
+        <p>Chai Adda ek dhaba-style cafe hai jahan doodh patti dheemi aanch par pakti hai aur kisi ko jaldi nahi hoti. Neeche apni chai ki strength chuno ya seedha menu dekho.</p>
+        <a class="btn" href="#menu">Menu dekho</a>
+      </div>
+      <div class="maker">
+        <div class="cup" aria-hidden="true">
+          <div class="steam"><i></i><i></i><i></i></div>
+          <div class="body"><div class="tea" id="tea"></div></div>
+          <div class="handle"></div>
+        </div>
+        <output id="strengthName" for="strength">Kadak</output>
+        <small id="strengthDesc">Patti zyada, doodh theek-thaak.</small>
+        <label for="strength" class="sr" style="position:absolute;left:-9999px">Chai strength</label>
+        <input type="range" id="strength" min="0" max="3" step="1" value="2">
+      </div>
+    </div>
+
+    <section id="menu">
+      <h2>Menu</h2>
+      <p class="sub">Add dabao, neeche order list ban jayegi.</p>
+      <div class="tabs" id="tabs" role="group" aria-label="Menu filter"></div>
+      <div class="menu" id="menuGrid"></div>
+    </section>
+
+    <section id="order">
+      <h2>Aapka order</h2>
+      <div class="order">
+        <div id="orderBody"></div>
+      </div>
+    </section>
+
+    <section id="visit">
+      <h2>Aa jao</h2>
+      <p class="sub">Roz subah 7 baje se raat 1 baje tak.</p>
+      <div class="visit">
+        <div><h3>Jagah</h3><p>Burns Road ke paas, Karachi. Neeche chaarpai, upar tarpal.</p></div>
+        <div><h3>Barish ka waqt</h3><p>Sab se zyada rush. Chai aur pakoray ka combo yahi chalta hai.</p></div>
+        <div><h3>Group order</h3><p>10 se zyada logon ke liye pehle bata do, kettle bada nikal denge.</p></div>
+      </div>
+    </section>
+  </main>
+</div>
+<div class="strip"></div>
+<footer>Chai Adda – demo website. HTML, CSS aur JavaScript se bani.</footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
